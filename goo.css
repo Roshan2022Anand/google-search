@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.858);
+}
+nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+}
+nav > button{
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+nav > a{
+    font-size: 20px;
+    color: white;
+}
+header{
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 100px;
+    font-weight:lighter;
+    margin-top: 100px;
+}
+main{
+    text-align: center;
+}
+#search-bar{
+    width: 60%;
+    max-width: 600px;
+    height: 30px;
+    outline: 1px solid white;
+    border-radius: 15PX;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#search-bar button{
+    background-color: transparent;
+    border: none;
+}
+#search-bar-txt{
+    flex-grow: 1;
+    background-color: inherit;
+    border: none;
+    color: white;
+}
+#lucky{
+    background-color: rgb(68, 63, 63);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;
+}
+#lucky a{
+    padding: 10px;
+    color: white;
+}
+#lang-set a{
+    padding: 3px;
+}
+#lang-set a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+footer > div{
+    background-color: rgba(0, 0, 0, 0.512);
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+#footer-nav{
+    font-size: 15px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.512);
+    border-bottom: 1px solid white;
+    justify-content: space-around;
+}
+#footer-nav > div{
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+footer a{
+    color: white;
+}
+footer a:hover , nav > a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+@media (max-width:550px) {
+    #footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}
